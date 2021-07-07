@@ -16,8 +16,8 @@
 
 ## => Site Settings
 ##############################
-text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+text_skin: forest # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: tomorrow-night-blue # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url : "https://juhye-3d.github.io"
 title   : "Dynamic Space"
 description: > # this means to ignore newlines until "Language & timezone"
@@ -206,7 +206,7 @@ defaults:
       type: posts
     values:
       layout: article
-      title: Page - Sidebar
+      title: Page - Article Header Overlay Background Fill
       aside:
         toc: true
       sidebar:
@@ -216,7 +216,15 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
-
+---
+layout: article
+title: Page - Article Header Overlay Background Fill
+article_header:
+  type: overlay
+  theme: dark
+  background_color: '#123'
+  background_image: false
+---
 
 ## => Plugins
 ##############################
